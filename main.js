@@ -35,9 +35,13 @@ function Employee(name, job, salary,) {
 
 
 Employee.prototype.printEmployeeForm = function () {
-    employees.push(person1)
     console.log(employees)
+   
 }
-var person1 = new Employee("Sasha", "Caption Editor", "$15/hour", this.Status)
+var person1 = new Employee("Sasha Sims", "Caption Editor", "$15/hour", this.Status)
+var person2 = new Employee("Bob the Builder", "Builder", "40,000" )
+var person3 = new Employee("Aaron Lake", "Application Developer", "$65,000", this.Status)
+person2.Status = "Contract"
 
+employees.push(person1, person2, person3)
 person1.printEmployeeForm()
